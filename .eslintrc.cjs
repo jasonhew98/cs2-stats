@@ -11,22 +11,8 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'prettier'],
-  settings: {
-    'import/resolver': {
-      node: {
-        paths: ['src'],
-        extensions: ['.js', '.jsx', '.ts', '.d.ts', '.tsx'],
-      },
-      typescript: {
-        project: './tsconfig.json',
-      },
-      alias: {
-        map: [['@', path.resolve(__dirname, './src')]],
-        extensions: ['.js', '.jsx', '.ts', '.d.ts', '.tsx'],
-      },
-    },
-  },
   rules: {
+    'import/no-unresolved': 'off', // might not be best to turn it off but settings to resolve alias breaks prettier
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
