@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+@layer base {
+  :root {
+    --primary-100: #FF00FF;
+    --primary-200: #B300B2;
+    --primary-300: #FFE5FF;
+    --accent-100: #00FFFF;
+    --accent-200:#00B2B3;
+    --font-100:#cccccc;
+    --font-200:#7b7b7b;
+    --base-100:#141414;
+    --base-200:#0E0E0E;
+    --base-300:#131313;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary-100: #FF00FF;
+      --primary-200: #B300B2;
+      --primary-300: #FFE5FF;
+      --accent-100: #00FFFF;
+      --accent-200:#00B2B3;
+      --font-100:#cccccc;
+      --font-200:#7b7b7b;
+      --base-100:#141414;
+      --base-200:#0E0E0E;
+      --base-300:#131313;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --primary-100: #FF00FF;
+    --primary-200: #B300B2;
+    --primary-300: #FFE5FF;
+    --accent-100: #00FFFF;
+    --accent-200:#00B2B3;
+    --font-100:#cccccc;
+    --font-200:#7b7b7b;
+    --base-100:#141414;
+    --base-200:#0E0E0E;
+    --base-300:#131313;
+  }
+
+  :root[data-theme="light"] {
+    --primary-100: #FF00FF;
+    --primary-200: #B300B2;
+    --primary-300: #FFE5FF;
+    --accent-100: #00FFFF;
+    --accent-200:#00B2B3;
+    --font-100:#cccccc;
+    --font-200:#7b7b7b;
+    --base-100:#141414;
+    --base-200:#0E0E0E;
+    --base-300:#131313;
+  }
+}
