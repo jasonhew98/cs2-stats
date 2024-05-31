@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar: React.FC = () => {
   return (
@@ -13,16 +13,16 @@ const NavBar: React.FC = () => {
           </div>
         </div>
         <div className="hidden lg:flex items-center space-x-6 text-back">
-            <Link to="/login" className="hover:text-darkBlue">
-              Login
-            </Link>
-            <Link
-              to="/register"
-              className="px-8 py-3 font-bold rounded bg-lightGreen hover:opacity-70"
-            >
-              Signup
-            </Link>
-          </div>
+          <Link to="/login" className="hover:text-darkBlue">
+            Login
+          </Link>
+          <Link
+            to="/register"
+            className="px-8 py-3 font-bold rounded bg-lightGreen hover:opacity-70"
+          >
+            Signup
+          </Link>
+        </div>
       </div>
     </nav>
   );
