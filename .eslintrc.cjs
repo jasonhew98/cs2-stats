@@ -30,5 +30,6 @@ module.exports = {
         allowSeparatedGroups: false,
       },
     ],
+    'tailwindcss/no-custom-classname': 'off'
   },
 }
