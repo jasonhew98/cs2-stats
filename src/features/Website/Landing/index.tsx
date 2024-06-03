@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Landing: React.FC = () => {
-  return <main>Landing</main>;
+  return <main className="container mx-auto"></main>;
 };
 
 export { Landing };

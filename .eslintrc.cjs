@@ -7,7 +7,6 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
     'plugin:import/recommended',
-    'plugin:tailwindcss/recommended'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -30,6 +29,5 @@ module.exports = {
         allowSeparatedGroups: false,
       },
     ],
-    'tailwindcss/no-custom-classname': 'off'
   },
-}
+};

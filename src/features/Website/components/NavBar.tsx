@@ -1,24 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '@/assets/images/logo.svg';
 
 const NavBar: React.FC = () => {
   return (
-    <nav className="container relative mx-auto p-6">
+    <nav className="container relative mx-auto text-white">
       <div className="flex items-center justify-between">
-        <div className="flex items-center space-x-20">
-          <div className="hidden font-bold lg:flex">
-            <Link to="/search" className="text-black hover:text-black">
-              Search
-            </Link>
-          </div>
-        </div>
-        <div className="hidden items-center space-x-6 text-black lg:flex">
-          <Link to="/login" className="">
+        <Logo className="size-8 fill-primary" />
+        <div className="hidden items-center space-x-6 lg:flex">
+          <Link
+            to="/login"
+            className="rounded px-8 py-3 font-bold hover:opacity-70"
+          >
             Login
           </Link>
           <Link
             to="/register"
-            className="rounded px-8 py-3 pt-5 font-bold hover:opacity-70"
+            className="rounded px-8 py-3 font-bold hover:opacity-70"
           >
             Signup
           </Link>

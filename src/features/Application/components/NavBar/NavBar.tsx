@@ -8,21 +8,21 @@ const NavBar: React.FC = () => {
   const items = GetItems();
 
   return (
-    <nav className="container relative mx-auto p-6">
-      <div>
-        <Logo className="fill-primary size-6" />
-      </div>
+    <nav className="container relative mx-auto">
       <div className="flex items-center justify-between">
+        <div>
+          <Logo className="size-6 fill-primary" />
+        </div>
         <TabGroup>
-          <TabList>
+          <TabList className="gap-1">
             {items.map(({ id, label }) => {
               return <Tab key={id}>{label}</Tab>;
             })}
           </TabList>
         </TabGroup>
-      </div>
-      <div>
-        <NavBarUser />
+        <div>
+          <NavBarUser />
+        </div>
       </div>
     </nav>
   );
