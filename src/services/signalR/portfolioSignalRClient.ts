@@ -10,8 +10,6 @@ const reconnectTimeout = 1000;
 let signalRHubProxy: SignalR.Hub.Proxy | null = null;
 
 export class PortfolioSignalRClient implements IPortfolioSignalRClient {
-  private test = $;
-
   constructor(onReceived: (message: any) => void, onReconnecting: () => void) {
     if (!signalRHubProxy) {
       signalRHubProxy = this.initializeClient(onReceived, onReconnecting);
